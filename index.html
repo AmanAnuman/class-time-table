@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Class Time Table</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Times New Roman", Arial, sans-serif;
+            font-size: 1.1em;
+            color: #36f107;
+        }
+        body {
+            background-image: url(i.jpg);
+            background-position: center;
+            background-repeat: repeat;
+            background-size: cover;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: none;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 1200px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 10px;
+            border: 2px groove #000;
+            border-radius: 10px;
+            text-align: left;
+        }
+        th {
+            background:transparent;
+            color: #36f107;
+        }
+        tr td:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            color: rgb(13, 206, 219);
+        }
+        h1 {
+            text-align: center;
+            color: rgb(134, 16, 25);
+            margin: 20px 0;
+            animation: colorchange 5s infinite;
+        }
+        small {
+            color: rgb(243, 22, 225);
+            animation: colorchange 5s infinite;
+        }
+        @keyframes colorchange {
+            0% { color: rgb(194, 247, 5); }
+            50% { color: rgb(18, 57, 233); }
+            100% { color: rgb(9, 10, 10); }
+        }
+        @media (max-width: 768px) {
+            th, td {
+                font-size: 0.9em;
+                padding: 8px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+        @media (max-width: 480px) {
+            th, td {
+                font-size: 0.8em;
+                padding: 6px;
+            }
+            table {
+                width: 100%;
+            }
+            h1 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="POST">
+        <h1>STUDENT CLASS TIME TABLE <small>week one</small></h1>
+        <table>
+            <tr>
+                <th>Day for Presentation</th>
+                <th>Name of the Presenter</th>
+                <th>Module Presented</th>
+                <th>Time for Presentation</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>1. Rateson Joshuwa Nachihangu<br>2. Ajuaye Bahati Bhuchilo</td>
+                <td>Entrepreneurship<br>Monitoring</td>
+                <td>08:00AM<br>02:00PM</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>1. Enock Rainhald Kawogo<br>2. Justine Olum Andrecus</td>
+                <td>Health Statistics<br>Medical Demography</td>
+                <td>08:00AM<br>02:00PM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>1. Michael Christantus Mzigili<br>2. Edward T. Evart</td>
+                <td>Epidemiology<br>Research</td>
+                <td>08:00AM<br>02:00PM</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>1. Willbard Yusuph Mayunga<br>2. Gidalia Seleman Philipo</td>
+                <td>Medical Demography<br>Community Health</td>
+                <td>08:00AM<br>02:00PM</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>1. Abduli Hamisi Salimu<br>2. Joel Elia Mhamilawa</td>
+                <td>Community Health<br>Health Statistics</td>
+                <td>08:00AM<br>02:00PM</td>
+            </tr>
+            <tr>
+                <td>Weekend Vibe</td>
+                <td>Try to use your group discussion</td>
+                <td>---</td>
+                <td>---</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
